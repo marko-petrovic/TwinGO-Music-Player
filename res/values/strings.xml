@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="this_app_name">twinGO Music Player</string>
+    <string name="gp_app_name">com.dualquo.te.carplayer</string>
+
+    <!-- Randomly generated from http://www.famkruithof.net/uuid/uuidgen -->
+    <string name="UUID0">32179c68-bd98-4c80-ae71-2e04591d34c7</string>
+    <string name="UUID1">3e41514d-0b98-41bc-9bf9-81b1432d381c</string>
+    <string name="UUID2">f6ab354c-680f-41c7-8519-8db67a7707b4</string>
+    <string name="UUID3">f1b5db3d-adf9-4d82-ab02-1718f44a7dde</string>
+    <string name="UUID4">69489e8a-7e2e-49ab-b736-3cbec6630579</string>
+    <string name="UUID5">dbd3d8d9-020a-40b8-989c-eaec7b1413a4</string>
+    <string name="UUID6">95dea9fd-5ba8-421f-869f-49bd2cbb2a04</string>    
+    <string name="UUID7">1a4ae9e0-144d-11e1-be50-0800200c9a66</string>
+    <string name="UUID8">1a4ae9e1-144d-11e1-be50-0800200c9a66</string>
+    <string name="UUID9">1a4ae9e2-144d-11e1-be50-0800200c9a66</string>
+    <string name="UUID10">1a4ae9e3-144d-11e1-be50-0800200c9a66</string>
+    <string name="UUID11">1a4ae9e4-144d-11e1-be50-0800200c9a66</string>
+    <string name="UUID12">1a4ae9e5-144d-11e1-be50-0800200c9a66</string>
+    <string name="UUID13">1a4ae9e6-144d-11e1-be50-0800200c9a66 </string>
+    
+    <string name="INTENT_DEVICE_NAME">device.name</string>
+    <string name="INTENT_INDEX">index</string>
+    <string name="INTENT_MESSAGE_TOAST">message.toast</string> 
+
+    <!-- DeviceListActivity -->
+    <string name="scanning">Scanning for bluetooth devices...</string>
+    <string name="select_device">Select device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No bluetooth devices found</string>
+    <string name="title_paired_devices">Previously paired devices:</string>
+    <string name="title_other_devices">Other available devices:</string>
+    <string name="button_scan">Scan for other devices</string>
+
+</resources>

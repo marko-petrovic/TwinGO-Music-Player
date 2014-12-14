@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2010, 2011 Christopher Eby <kreed@kreed.org>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<com.dualquo.te.carplayer.CoverView
+		android:id="@+id/cover_view"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent" />
+	
+<!-- 	<RelativeLayout  -->
+<!-- 	android:id="@+id/mirror" -->
+<!--     android:layout_width="match_parent" -->
+<!--     android:layout_height="match_parent" -->
+<!--     android:padding="30dp" > -->
+<!-- 	    <FrameLayout -->
+<!-- 	        android:id="@+id/camPreview" -->
+<!-- 	        android:layout_width="wrap_content" -->
+<!-- 	        android:layout_height="wrap_content" -->
+<!-- 	        android:layout_centerHorizontal="true" -->
+<!-- 	        android:layout_centerVertical="true" > -->
+<!-- 	    </FrameLayout> -->
+<!-- 	</RelativeLayout> -->
+	
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_gravity="top|left"
+		android:layout_margin="0dip"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/title"
+			android:ellipsize="marquee"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:gravity="center"
+			android:singleLine="true"
+			android:textStyle="bold"
+		    android:focusable="true"
+		    android:focusableInTouchMode="true"
+		    android:freezesText="true"
+		    android:marqueeRepeatLimit="marquee_forever"
+		    android:paddingTop="6dp"
+		    android:paddingLeft="12dip"
+		    android:paddingRight="12dip"
+		    android:scrollHorizontally="true" />
+		
+		<TextView
+			android:id="@+id/artist"
+			android:ellipsize="marquee"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:gravity="center"
+			android:singleLine="true"
+			android:paddingBottom="4dp" />
+		
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/warning"
+	    android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="vertical"
+		android:layout_gravity="center_vertical|center_horizontal"
+		android:layout_margin="0dip">
+	    
+	    <TextView
+			android:id="@+id/warning_text"
+			android:ellipsize="marquee"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:gravity="center"
+			android:singleLine="true"
+			android:textStyle="bold"
+		    android:focusable="true"
+		    android:focusableInTouchMode="true"
+		    android:freezesText="true"
+		    android:marqueeRepeatLimit="marquee_forever"
+		    android:paddingLeft="12dip"
+		    android:paddingRight="12dip"
+		    android:scrollHorizontally="true"
+		     />
+	    
+	</LinearLayout>
+	    
+	   <LinearLayout 
+	       android:layout_height="wrap_content"
+		   android:layout_width="fill_parent"
+		   android:layout_gravity="bottom"
+		   android:orientation="vertical"
+		   android:layout_margin="0dip"
+		   android:paddingLeft="6dp"
+		   android:paddingRight="6dp">
+	       
+	       
+	       
+	       <RelativeLayout 
+	    android:id="@+id/controls_bottom_relative_layout"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_gravity="bottom|left"
+		android:layout_margin="0dip"
+		android:background="@android:color/transparent">
+	    
+	    <LinearLayout
+		android:id="@+id/controls_bottom"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_gravity="bottom"
+		android:layout_margin="0dip"
+		android:orientation="horizontal">
+			
+	    <LinearLayout 
+	    android:id="@+id/controls_bottom_left_corner"
+		android:layout_height="fill_parent"
+		android:layout_width="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:layout_margin="0dip"
+		android:orientation="vertical">
+	        
+	        <ImageButton
+			android:id="@+id/shuffle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="@null"
+			android:gravity="center_vertical"
+			android:scaleType="fitCenter"
+			android:src="@drawable/shuffle_inactive" />
+			<ImageButton
+			android:id="@+id/end_action"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="@null"
+			android:gravity="center_vertical"
+			android:scaleType="fitCenter"
+			android:src="@drawable/repeat_inactive" />
+	        
+	    </LinearLayout>
+		
+		<ImageButton
+			android:id="@+id/previous"
+			android:layout_height="wrap_content"
+			android:layout_width="0px"
+			android:layout_weight="1"
+			android:background="@null"
+			android:scaleType="fitCenter"
+			android:src="@drawable/previous" />
+		<ImageButton
+			android:id="@+id/play_pause"
+			android:layout_height="wrap_content"
+			android:layout_width="0px"
+			android:layout_weight="1"
+			android:background="@null"
+			android:scaleType="fitCenter"
+			android:src="@drawable/play" />
+		<ImageButton
+			android:id="@+id/next"
+			android:layout_height="wrap_content"
+			android:layout_width="0px"
+			android:layout_weight="1"
+			android:background="@null"
+			android:scaleType="fitCenter"
+			android:src="@drawable/next" />
+		
+		<LinearLayout android:id="@+id/controls_bottom_right_corner"
+		android:layout_height="fill_parent"
+		android:layout_width="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:layout_margin="0dip"
+		android:orientation="vertical">
+	        
+	    <ImageButton
+			android:id="@+id/open_songs"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="@null"
+			android:gravity="center_vertical"
+			android:scaleType="fitCenter"
+			android:src="@drawable/ic_menu_open_songs" />
+	    
+	    <ImageButton
+			android:id="@+id/open_settings"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="@null"
+			android:gravity="center_vertical"
+			android:scaleType="fitCenter"
+			android:src="@drawable/ic_menu_open_settings" />
+	        
+	    </LinearLayout>
+		
+	</LinearLayout>
+	    
+	</RelativeLayout>
+	       
+	           <LinearLayout 
+	           android:orientation="horizontal"
+	           android:layout_height="wrap_content"
+			   android:layout_width="fill_parent"
+			   android:paddingTop="10dp"
+			   android:paddingBottom="9dp">
+	           
+	           <TextView
+	               android:id="@+id/elapsed"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:gravity="center_vertical"
+	               android:textSize="16sp" />
+
+	           <SeekBar
+	               android:id="@+id/seek_bar"
+	               android:layout_width="0dp"
+	               android:layout_height="wrap_content"
+	               android:layout_weight="1"
+	               android:paddingLeft="10dip"
+	               android:paddingRight="10dip" />
+
+	           <TextView
+	               android:id="@+id/duration"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:gravity="center_vertical"
+	               android:textSize="16sp" />
+	           
+	       </LinearLayout>
+	       
+	   </LinearLayout> 
+	    
+	
+</merge>
